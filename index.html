@@ -1,0 +1,44 @@
+<html>
+<head>
+ <title>Lab 7</title>   
+ <style>
+table{
+    /* display: flex; */
+    width: 100vw;
+    border: solid 2px;
+}
+td{
+    border: solid 2px;
+    text-align: center;
+    padding: 1rem;
+}
+ 
+ </style>
+</head>
+<body>
+<h3>Having Fun with JavaScript Events</h3>
+    
+<p>Click on image to add to cart</p>
+<table style="width: 100%">
+    <tr>
+        <td id='Extra'><img src='img/gum1.jpg'></td>
+        <td><img src='img/gum2.jpg' id='Wrigleys'></td>
+        <td><img src='img/gum3.jpg' id='Trident'></td>
+        <td><img src='img/gum4.jpg' id='Bubble'></td>
+    </tr>
+    <tr>
+        <td colspan="2">Shopping Cart Items:</td>
+        <td id='items' colspan="2">0</td>
+    </tr>
+    <tr>
+        <td colspan="2">Shopping Cart Total:</td>
+        <td id = 'Total' colspan="2">$0.00</td>
+    </tr>
+    <tr>
+        <td colspan="4"><input type='button' value='Clear' name='clearItems' id='clearItems'></td>
+    </tr>
+</table>
+
+<script src='scripts/gumPricing.js'></script>
+</body>
+</html>
